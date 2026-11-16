@@ -28,7 +28,7 @@ export default function ProtectedRoute({ children }) {
         <div className="max-w-sm text-center">
           <Logo className="mx-auto h-10 w-auto" />
           <h1 className="mt-6 text-lg font-bold text-ink">Your account is suspended</h1>
-          <p className="mt-2 text-sm text-muted">This account has been banned by an administrator. Contact the IFN team if you think this is a mistake.</p>
+          <p className="mt-2 text-sm text-muted">This account has been banned by an administrator. Contact the IEN team if you think this is a mistake.</p>
           <button className="btn-outline mt-6" onClick={() => supabase.auth.signOut()}>Log out</button>
         </div>
       </div>

@@ -85,7 +85,7 @@ export default function Onboarding() {
       <div className="mx-auto max-w-lg">
         <div className="flex flex-col items-center text-center">
           <Logo className="h-9 w-auto" />
-          <h1 id="onboarding-heading" className="mt-5 text-2xl font-extrabold">Welcome to ICFAI Founders Network</h1>
+          <h1 id="onboarding-heading" className="mt-5 text-2xl font-extrabold">Welcome to ICFAI Entrepreneurs Network</h1>
           <p className="mt-1 text-sm text-muted">Tell us a bit about you so the right people can find you. Takes a minute.</p>
         </div>
 

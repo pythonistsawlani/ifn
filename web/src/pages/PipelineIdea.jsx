@@ -137,7 +137,7 @@ export default function PipelineIdea() {
       {idea.pipeline_state === 'refine' && (
         <div className="mt-4 rounded-lg border border-accent/30 bg-accent-soft px-3 py-2.5 text-sm text-accent">
           <div className="font-semibold">Sent back: refine &amp; retry{lastRejection?.reason ? ` - ${lastRejection.reason}` : ''}</div>
-          <div className="mt-0.5 text-xs text-accent">Editing and resubmitting re-enters the idea at G1 to climb the gates again — your IFN number stays the same.</div>
+          <div className="mt-0.5 text-xs text-accent">Editing and resubmitting re-enters the idea at G1 to climb the gates again — your IEN number stays the same.</div>
           {mine && (
             <div className="mt-2 flex items-center gap-2">
               <button onClick={() => setEditOpen(true)} className="btn-outline px-3 py-1.5 text-xs">Edit application</button>
@@ -338,7 +338,7 @@ function ResubmitButton({ ideaId, onDone }) {
     if (error) { console.error(error); return alert(GENERIC_ERR) }
     onDone()
   }
-  return <button className="btn-primary px-3 py-1.5 text-xs" onClick={go} disabled={busy}>{busy ? 'Resubmitting...' : 'Resubmit (keeps the IFN number)'}</button>
+  return <button className="btn-primary px-3 py-1.5 text-xs" onClick={go} disabled={busy}>{busy ? 'Resubmitting...' : 'Resubmit (keeps the IEN number)'}</button>
 }
 
 // ---------------------------------------------------------------------------

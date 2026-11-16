@@ -7,9 +7,9 @@ const ITEMS = [
   { to: '/pipeline', label: 'Idea Pipeline', icon: Workflow, title: 'Track your startup through G1–G6 mentor-reviewed gates' },
   { to: '/problem-hub', label: 'Problem Hub', icon: Puzzle, title: 'Post real-world problems; the network proposes solutions' },
   { to: '/services', label: 'Services', icon: HeartHandshake, title: 'Offer or request skills and resources from the network' },
-  { to: '/directory', label: 'Directory', icon: LayoutGrid, title: 'Browse and connect with IFN members' },
+  { to: '/directory', label: 'Directory', icon: LayoutGrid, title: 'Browse and connect with IEN members' },
   { to: '/failure-stories', label: 'Failure Stories', icon: FolderHeart, title: 'Case studies of failed ideas — lessons learned and what survived' },
-  { to: '/calendar', label: 'Calendar', icon: Calendar, title: 'IFN events and deadlines', mobileOnly: true },
+  { to: '/calendar', label: 'Calendar', icon: Calendar, title: 'IEN events and deadlines', mobileOnly: true },
 ]
 
 const base = 'flex items-center gap-3.5 rounded-lg px-4 py-3 text-base font-semibold transition-colors'

@@ -234,7 +234,7 @@ function DeadlineDetailModal({ a, onClose }) {
   return (
     <Shell title={a.label} onClose={onClose}>
       <span className="mt-3 inline-flex items-center gap-1 rounded-md bg-down/15 px-2.5 py-0.5 text-[11px] font-semibold text-down">
-        <Flag size={11} /> My action item · IFN-{a.ifn}
+        <Flag size={11} /> My action item · IEN-{a.ifn}
       </span>
       <div className="mt-3 space-y-1.5 text-sm text-ink">
         <div className="flex items-center gap-2">

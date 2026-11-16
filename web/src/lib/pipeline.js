@@ -94,4 +94,4 @@ export const NOTIF_TEXT = {
   registration_request: 'New registration request to review',
 }
 
-export const ifnTag = (n) => `IFN-${n}`
+export const ifnTag = (n) => `IEN-${n}`

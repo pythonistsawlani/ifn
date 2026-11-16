@@ -2,6 +2,6 @@ import { useEffect } from 'react'
 
 export function usePageTitle(title) {
   useEffect(() => {
-    document.title = title ? `${title} — IFN` : 'IFN'
+    document.title = title ? `${title} — IEN` : 'IEN'
   }, [title])
 }

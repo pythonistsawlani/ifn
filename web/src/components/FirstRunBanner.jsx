@@ -29,7 +29,7 @@ export default function FirstRunBanner() {
   return (
     <div className="mb-4 rounded-xl border border-accent/20 bg-accent-soft px-5 py-4">
       <div className="flex items-start justify-between gap-3">
-        <p className="text-sm font-semibold text-accent">Welcome to IFN — here's what's here for you.</p>
+        <p className="text-sm font-semibold text-accent">Welcome to IEN — here's what's here for you.</p>
         <button
           onClick={dismiss}
           className="shrink-0 rounded-full p-1 text-accent/60 hover:bg-accent/10 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50"

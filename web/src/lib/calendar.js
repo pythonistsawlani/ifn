@@ -55,10 +55,10 @@ export function buildICS(ev) {
   const lines = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//IFN//Calendar//EN',
+    'PRODID:-//IEN//Calendar//EN',
     'CALSCALE:GREGORIAN',
     'BEGIN:VEVENT',
-    `UID:${ev.id}@ifn`,
+    `UID:${ev.id}@ien`,
     `DTSTAMP:${icsStamp(new Date().toISOString())}`,
     `DTSTART:${icsStamp(ev.starts_at)}`,
     `DTEND:${icsStamp(endOf(ev))}`,
@@ -78,7 +78,7 @@ export function actionEvent(a) {
   return {
     id: a.id,
     title: a.idea_title ? `${a.idea_title}: ${a.label}` : a.label,
-    description: `${a.details || ''}${a.ifn ? `\n(IFN-${a.ifn} action item)` : ''}`.trim(),
+    description: `${a.details || ''}${a.ifn ? `\n(IEN-${a.ifn} action item)` : ''}`.trim(),
     location: '',
     type: 'Deadline',
     starts_at: starts.toISOString(),

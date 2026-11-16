@@ -1,5 +1,5 @@
 // Terms & Conditions configuration
-// Verbatim legal text issued by ICFAI Incubator / IIEC for the IFN Platform.
+// Verbatim legal text issued by ICFAI Incubator / IIEC for the IEN Platform.
 // Increment CURRENT_TERMS_VERSION when any terms clauses change to mandate re-acceptance.
 export const CURRENT_TERMS_VERSION = 1
 
@@ -13,7 +13,7 @@ export const TERMS_STEPS = {
     sections: [
       {
         heading: 'Consent Notice',
-        content: 'By creating an account on the ICFAI Founders Network (IFN) Platform, you hereby grant express, unambiguous, and revocable consent to the Institution to collect, store, and process your personal data. This includes your itemized records: name, contact details, academic/professional history, institutional affiliation and specialized ecosystem data (including business plans, sector specializations, startup investment thresholds, and net-worth declarations for verified external mentors/investors).',
+        content: 'By creating an account on the ICFAI Entrepreneurs Network (IEN) Platform, you hereby grant express, unambiguous, and revocable consent to the Institution to collect, store, and process your personal data. This includes your itemized records: name, contact details, academic/professional history, institutional affiliation and specialized ecosystem data (including business plans, sector specializations, startup investment thresholds, and net-worth declarations for verified external mentors/investors).',
       },
       {
         heading: 'Purpose Limitation',
@@ -77,7 +77,7 @@ export const TERMS_STEPS = {
       },
       {
         heading: 'Absolute Immunity for User-Generated Content & Administrative Rights',
-        content: 'IIEC, its management, and the Central Information Technology (CIT) Department teams operate strictly as an intermediary. The owners of the IFN platform shall not be held liable for any offensive, misleading, or fraudulent content or comments posted by users. Platform administrators retain absolute freedom, unilateral discretion, and immediate statutory authority to delete any such non-compliant content and permanently terminate the platform membership and dashboard access of any current student or alumnus who violates these ecosystem standards, without prior notice.',
+        content: 'IIEC, its management, and the Central Information Technology (CIT) Department teams operate strictly as an intermediary. The owners of the IEN platform shall not be held liable for any offensive, misleading, or fraudulent content or comments posted by users. Platform administrators retain absolute freedom, unilateral discretion, and immediate statutory authority to delete any such non-compliant content and permanently terminate the platform membership and dashboard access of any current student or alumnus who violates these ecosystem standards, without prior notice.',
       },
       {
         heading: 'Waiver of Liability for Offline and Online Arrangements',

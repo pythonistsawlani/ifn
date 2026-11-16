@@ -9,7 +9,7 @@ import { PASSWORD_RULE } from './password'
 
 const FRIENDLY = {
   'your account is read-only': 'Your account is in read-only mode — posting, editing, voting and messaging are turned off. Contact an admin if this is a mistake.',
-  'account is banned': 'Your account has been banned. Contact the IFN team if you think this is a mistake.',
+  'account is banned': 'Your account has been banned. Contact the IEN team if you think this is a mistake.',
   'posting is currently closed': 'Posting is closed by an admin right now.',
   'pipeline submissions are currently closed': 'Pipeline submissions are closed right now.',
   'this member is not reachable': 'This member has turned off messages.',

@@ -512,7 +512,7 @@ export default function AdminPanel() {
             <option value="">All sectors</option>
             {SECTORS.map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
-          <input className="input w-44 min-h-9 py-1.5 text-xs" aria-label="Search ideas" maxLength={200} placeholder="Search title / author / IFN" value={query} onChange={(e) => setQuery(e.target.value)} />
+          <input className="input w-44 min-h-9 py-1.5 text-xs" aria-label="Search ideas" maxLength={200} placeholder="Search title / author / IEN" value={query} onChange={(e) => setQuery(e.target.value)} />
         </div>
       )}
 
@@ -584,11 +584,11 @@ export default function AdminPanel() {
 // --- mailto templates (admin's own mail client sends these; no SMTP). ---
 function welcomeMailto(name, email, password) {
   const origin = window.location.origin
-  const subject = 'Your ICFAI Founders Network account is ready'
+  const subject = 'Your ICFAI Entrepreneurs Network account is ready'
   const body =
 `Hi ${name || 'there'},
 
-An administrator created your ICFAI Founders Network account.
+An administrator created your ICFAI Entrepreneurs Network account.
 
 Sign in here: ${origin}/login
   Email: ${email}
@@ -596,22 +596,22 @@ Sign in here: ${origin}/login
 
 For your security you will be asked to set a new password the first time you sign in.
 
-— ICFAI Founders Network`
+— ICFAI Entrepreneurs Network`
   return `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 }
 
 function declineMailto(recipients) {
-  const subject = 'Your ICFAI Founders Network request'
+  const subject = 'Your ICFAI Entrepreneurs Network request'
   const body =
 `Hi,
 
-Thank you for your interest in the ICFAI Founders Network.
+Thank you for your interest in the ICFAI Entrepreneurs Network.
 
 After review, we are unable to approve access at this time.
 
 If you believe this is a mistake, reply to this email.
 
-— ICFAI Founders Network`
+— ICFAI Entrepreneurs Network`
   return `mailto:${encodeURIComponent(recipients)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 }
 
