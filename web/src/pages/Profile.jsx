@@ -2,7 +2,7 @@ import { cloneElement, useEffect, useId, useRef, useState } from 'react'
 import { supabase } from '../lib/supabase'
 import { usePageTitle } from '../lib/usePageTitle'
 import { useAuth } from '../lib/AuthProvider'
-import { REGIONS, SECTORS, DOMAINS } from '../lib/options'
+import { REGIONS, SECTORS, getDomainsForSectors } from '../lib/options'
 import { errMessage } from '../lib/errors'
 import { linkedinHandle, linkedinUrl } from '../lib/linkedin'
 import MemberTypeBadge from '../components/MemberTypeBadge'
@@ -190,7 +190,7 @@ export default function Profile() {
                     <MultiSelect value={form.sector} onChange={(v) => setForm({ ...form, sector: v })} options={SECTORS} placeholder="Select one or more sectors" />
                   </Edit>
                   <Edit label="Domain">
-                    <MultiSelect value={form.domain} onChange={(v) => setForm({ ...form, domain: v })} options={DOMAINS} placeholder="Select one or more domains" />
+                    <MultiSelect value={form.domain} onChange={(v) => setForm({ ...form, domain: v })} options={getDomainsForSectors(form.sector)} placeholder="Select one or more domains" />
                   </Edit>
                   <Edit label="LinkedIn" hint="Paste your LinkedIn URL or just your handle (the part after /in/). We always link to linkedin.com.">
                     <input className="input" maxLength={200} value={form.linkedin} placeholder="your-handle or full linkedin.com/in/ URL"

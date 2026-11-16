@@ -3,7 +3,7 @@ import { Navigate, useNavigate, useLocation } from 'react-router-dom'
 import { supabase } from '../lib/supabase'
 import { useAuth } from '../lib/AuthProvider'
 import { linkedinHandle } from '../lib/linkedin'
-import { REGIONS, SECTORS, DOMAINS } from '../lib/options'
+import { REGIONS, SECTORS, getDomainsForSectors } from '../lib/options'
 import Logo from '../components/Logo'
 import MultiSelect from '../components/MultiSelect'
 
@@ -112,7 +112,7 @@ export default function Onboarding() {
               <MultiSelect id="sector" value={form.sector} onChange={(v) => setForm((f) => ({ ...f, sector: v }))} options={SECTORS} placeholder="Select one or more sectors" />
             </Field>
             <Field label="Domain" required hint="Select all that apply.">
-              <MultiSelect id="domain" value={form.domain} onChange={(v) => setForm((f) => ({ ...f, domain: v }))} options={DOMAINS} placeholder="Select one or more domains" />
+              <MultiSelect id="domain" value={form.domain} onChange={(v) => setForm((f) => ({ ...f, domain: v }))} options={getDomainsForSectors(form.sector)} placeholder="Select one or more domains" />
             </Field>
             <Field label="Startup (optional)">
               <input className="input" maxLength={80} value={form.startup} onChange={set('startup')} placeholder="Your startup name" />
