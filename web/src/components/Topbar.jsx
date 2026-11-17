@@ -77,12 +77,12 @@ export default function Topbar({ onMenu }) {
 
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-card">
-      <div className="mx-auto flex h-14 max-w-6xl items-center gap-3 px-4">
+      <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4">
         <button onClick={onMenu} className="-ml-1 rounded-full p-2 text-muted hover:bg-black/5 hover:text-ink lg:hidden" aria-label="Open navigation">
           <Menu size={22} />
         </button>
         <Link to="/" aria-label="Home" className="flex items-center gap-2.5">
-          <Logo className="h-8 w-auto" />
+          <Logo className="h-10 sm:h-11 w-auto max-w-[210px] xs:max-w-[260px] sm:max-w-none" />
         </Link>
 
         <div className="ml-auto flex items-center gap-1">

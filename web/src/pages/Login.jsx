@@ -94,7 +94,7 @@ export default function Login() {
   return (
     <main className="min-h-screen grid place-items-center px-6">
       <form onSubmit={handleSubmit} noValidate className="card w-full max-w-sm p-8 animate-pop-in">
-        <Logo className="mb-5 h-12 w-auto" />
+        <Logo className="mb-6 h-14 w-auto" />
         <h1 className="text-lg font-semibold">Back to the Network</h1>
         <p className="mb-5 text-sm text-muted">Sign in to continue.</p>
 

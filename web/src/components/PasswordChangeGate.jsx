@@ -39,7 +39,7 @@ export default function PasswordChangeGate({ children }) {
   if (!profileLoaded) {
     return (
       <div className="grid min-h-screen place-items-center bg-page">
-        <div className="flex flex-col items-center gap-4"><Logo className="h-10 w-auto" /><Spinner size={24} /></div>
+        <div className="flex flex-col items-center gap-4"><Logo className="h-12 w-auto" /><Spinner size={24} /></div>
       </div>
     )
   }
@@ -71,7 +71,7 @@ export default function PasswordChangeGate({ children }) {
   return (
     <main className="grid min-h-screen place-items-center bg-page px-4">
       <div className="w-full max-w-sm">
-        <div className="mb-6 flex justify-center"><Logo className="h-10 w-auto" /></div>
+        <div className="mb-6 flex justify-center"><Logo className="h-12 w-auto" /></div>
         <div className="card p-6">
           <h1 className="text-lg font-bold">Set a new password</h1>
           <p className="mt-1 text-sm text-muted">You signed in with a temporary password. Choose your own to continue.</p>

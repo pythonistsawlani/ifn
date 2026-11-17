@@ -78,7 +78,7 @@ export default function ForgotPassword() {
   return (
     <main className="min-h-screen grid place-items-center px-6">
       <form onSubmit={handleSubmit} noValidate className="card w-full max-w-sm p-8 animate-pop-in">
-        <Logo className="mb-5 h-12 w-auto" />
+        <Logo className="mb-6 h-14 w-auto" />
         <h1 className="text-lg font-semibold">Reset your password</h1>
         <p className="mb-5 text-sm text-muted">We will email you a link to set a new one.</p>
 

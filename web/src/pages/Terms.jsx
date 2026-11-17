@@ -86,7 +86,7 @@ export default function Terms() {
     return (
       <div className="grid min-h-screen place-items-center bg-page">
         <div className="flex flex-col items-center gap-4">
-          <Logo className="h-10 w-auto" />
+          <Logo className="h-12 w-auto" />
           <Spinner size={24} />
         </div>
       </div>
@@ -113,7 +113,7 @@ export default function Terms() {
     <main className="grid min-h-screen place-items-center bg-page px-4 py-8">
       <div className="w-full max-w-2xl">
         <div className="mb-6 flex justify-center">
-          <Logo className="h-10 w-auto" />
+          <Logo className="h-12 w-auto" />
         </div>
 
         <div className="card p-6 sm:p-8">
